@@ -10,6 +10,8 @@ export function ZeroEnv(
 ): Plugin {
   let userConfig = {};
   let configEnv: any = {};
+  if (!options.envPath) options.envPath = ".";
+  if (!options.indexPath) options.indexPath = "./index.html";
   return {
     name: "vite-plugin-zero-monitor",
     config(config: any, env: any) {
