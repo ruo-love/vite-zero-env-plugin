@@ -13,7 +13,7 @@ export function ZeroEnv(
   if (!options.envPath) options.envPath = ".";
   if (!options.indexPath) options.indexPath = "./index.html";
   return {
-    name: "vite-plugin-zero-monitor",
+    name: "vite-zero-env-plugin",
     config(config: any, env: any) {
       userConfig = config;
       configEnv = env;
