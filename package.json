@@ -1,0 +1,31 @@
+{
+  "name": "@zrcode/vite-zero-env-plugin",
+  "version": "1.1.1",
+  "description": "",
+  "main": "./dist/vite-zero-env-plugin.umd.js",
+  "types": "./dist/types/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:plugin": "rimraf dist && tsc -p .",
+    "dev": "vite",
+    "build:beta": "vite build --mode beta",
+    "build:pro": "vite build --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "@zrcode/vite-zero-env-plugin": "1.1.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "dependencies": {}
+}
