@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import path from "path";
 // import { ZeroEnv } from "@zrcode/vite-zero-env-plugin";
-import { ZeroEnv } from "./src/index";
+import {ZeroEnv} from "./src/index";
+
 export default defineConfig({
-  plugins: [ZeroEnv({})],
+  plugins: [ZeroEnv({defaultDesc:true})],
   build: {
     lib: {
       entry: "src/index.ts",

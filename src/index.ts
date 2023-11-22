@@ -15,6 +15,7 @@ export function ZeroEnv(
   return {
     name: "vite-zero-env-plugin",
     config(config: any, env: any) {
+      console.log(__dirname);
       userConfig = config;
       configEnv = env;
     },
